@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    white-space: none;
+}
+
+h1{
+    color: white;
+    letter-spacing: 4px;
+    font-size: 100px;
+    backdrop-filter: brightness(0.5);
+}
+
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0;
+}
+
+.split.left{
+    position: absolute;
+    left: 0;
+    background-color: salmon;
+    background-image: url("https://d1iv6qgcmtzm6l.cloudfront.net/products/lg_sjpwwDKlkxGq77yLxh8iHfMXRKVwYlRJBOHv2POZ.jpg");
+    background-size: cover;
+}
+
+.split.right{
+    position: absolute;
+    right: 0;
+    background-color: aliceblue;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvGBT4ecJvKu3VWG38Skkr3KThcuND_Ch_CIklhwS5lxaNGe3QPgqpgoE71NWnC3x_bFY&usqp=CAU");
+    background-size: cover;
+}
+
+.btn{
+    padding: 20px 40px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 4px solid;
+    transition: 1s background-color;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.active-left .left{
+    width: 75%;
+}
+
+.active-left .right{
+    width: 25%;
+}
+
+.active-right .left{
+    width: 25%;
+}
+
+.active-right .right{
+    width: 75%;
+}
