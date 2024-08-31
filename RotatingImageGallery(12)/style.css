@@ -61,3 +61,7 @@ body{
     position: absolute;
     right: 20px;
 }
+
+.btn:hover{
+    filter: brightness(1.5);
+}
