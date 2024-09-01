@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: yellow;
+    text-align: center;
+}
+
+.stats-counter{
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    border: green dotted ;
+    position: relative;
+    padding: 20px;
+}
+
+.icon{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.counter{
+    font-size: 50px;
+    margin-top: 5px;
+    color: green;
+}
+
+.title{
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
